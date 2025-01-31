@@ -15,57 +15,57 @@ import SkillsSection from './components/Skills/App'
 import { TextHoverEffect } from './components/GlowText/ui'
 
 function App() {
-    const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0)
 
-    return (
-        <>
-            <NavbarDemo />
-            <div id='home'>
-                <Landing/>
-            </div>
+  return (
+    <>
+      <NavbarDemo />
+        <div id='home'>
+            <Landing/>
+        </div>
 
-            {/* <div id='projects'>
+      {/* <div id='projects'>
         <Laptop />
       </div> */}
-            <div id='projects' className='bg-[#0a0a0a]'>
-                <BentoGridDemo />
-            </div>
+      <div id='projects' className='bg-[#0a0a0a]'>
+        <BentoGridDemo />
+      </div>
 
-            <div id='team'>
-                <Team />
-            </div>
-            <div id='achievements' className='bg-[#0a0a0a]'>
-                <TextHoverEffect text="ACHIEVEMENTS" id="Achievements" size={4}/>
-                <div id='leetcode'>
-                    <LeetCodeProgress />
-                </div>
-                <div id='leetcode'>
-                    <LeetcodeCal />
-                </div>
+      <div id='team'>
+        <Team />
+      </div>
+      <div id='achievements' className='bg-[#0a0a0a]'>
+        <TextHoverEffect text="ACHIEVEMENTS" id="Achievements" size={4}/>
+        <div id='leetcode'>
+          <LeetCodeProgress />
+        </div>
+        <div id='leetcode'>
+          <LeetcodeCal />
+        </div>
 
-                <div id='github'>
-                    <Github />
-                </div>
+        <div id='github'>
+          <Github />
+        </div>
 
-                <div id='github'>
-                    <GithubCal />
-                </div>
-            </div>
+        <div id='github'>
+          <GithubCal />
+        </div>
+      </div>
 
-            <div id='skills'>
-                <SkillsSection />
-            </div>
+      <div id='skills'>
+        <SkillsSection />
+      </div>
 
-            <div id='journey'>
-                <TimelineDemo />
-            </div>
+      <div id='journey'>
+        <TimelineDemo />
+      </div>
 
-            <div id='Footer'>
-                <Footer />
-            </div>
+      <div id='Footer'>
+        <Footer />
+      </div>
 
-        </>
-    )
+    </>
+  )
 }
 
 export default App

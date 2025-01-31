@@ -2,26 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-    .animated-text {
-        background: radial-gradient(
-                circle at var(--text-mouse-x) var(--text-mouse-y),
-                var(--gradient-text-center) 0%,
-                var(--gradient-text-edge) 40%
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-    }
+::selection{
+  color: #494cef;
 }
+@layer base {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+      display: none !important;
+  }
 
-@layer components {
-    .animated-text {
-        font-size: 3rem;
-        font-weight: 900;
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
 }
